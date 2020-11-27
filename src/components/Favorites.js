@@ -13,8 +13,8 @@ function Favorites({ favorite, removeFavor, handleClick,trailerUrl}) {
 
   return (
     <div className="container-fluid movie-app">
-      {favorite? <div className="row" >
-      {favorite.map((movie, index) => (
+      <div className="row" >
+      {favorite?.map((movie, index) => (
         <div className="row-imagess justify-content-start d-flex ">
             <img
               src={movie.Poster}
@@ -31,7 +31,7 @@ function Favorites({ favorite, removeFavor, handleClick,trailerUrl}) {
           </div>
         </div>
         ))}
-      </div>: <div></div>}
+      </div>
         
       
     </div>
