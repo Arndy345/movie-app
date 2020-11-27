@@ -16,13 +16,12 @@ function Row({ movies, setFavor, handleClick, trailerUrl}) {
     {movies?.map((movie, index) => (
       <div className="row-images justify-content-start d-flex ">
           <img
-            src={movie.Poster}
-            alt={movie.Title}
+            src={movie?.Poster}
+            alt={movie?.Title}
             className="row-image"
             
             
           />
-          <div className="overlay"></div>
         
         <div className="overlay align-items-center " >
           <PlayCircleFilledIcon className="body__shuffle play" onClick={() => handleClick(movie)} fontSize="medium"/>
