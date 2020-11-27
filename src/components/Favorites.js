@@ -17,8 +17,8 @@ function Favorites({ favorite, removeFavor, handleClick,trailerUrl}) {
       {favorite?.map((movie, index) => (
         <div className="row-imagess justify-content-start d-flex ">
             <img
-              src={movie.Poster}
-              alt={movie.Title}
+              src={movie?.Poster}
+              alt={movie?.Title}
               className="fav-image"
               
               
