@@ -1,0 +1,157 @@
+.row {
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+    z-index: 1;
+}
+
+.row-images {
+    position: relative;
+    transition: transform 450ms;
+    -webkit-transition: transform 450ms;
+    -moz-transition: transform 450ms;
+    -ms-transition: transform 450ms;
+    -o-transition: transform 450ms;
+}
+
+.row-image {
+    width: 100%;
+    margin-right: 15px;
+    min-width: 100px;
+    object-fit: contain;
+}
+
+.fav-image {
+    width: 100%;
+    margin-right: 15px;
+    min-width: 120px;
+    object-fit: contain;
+}
+
+.row-imagess {
+    position: relative;
+    transition: transform 450ms;
+    -webkit-transition: transform 450ms;
+    -moz-transition: transform 450ms;
+    -ms-transition: transform 450ms;
+    -o-transition: transform 450ms;
+}
+
+.row-imagess:hover {
+    transform: scale(1.08);
+    -webkit-transform: scale(1.08);
+    -moz-transform: scale(1.08);
+    -ms-transform: scale(1.08);
+    -o-transform: scale(1.08);
+    color: white;
+}
+
+.overlay {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 0;
+    background-color: black;
+    width: 90%;
+    opacity: 0;
+    padding-bottom: 10px;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.row-images>.overlay {
+    justify-content: space-between;
+}
+
+.row-imagess:hover .overlay {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.row-images:hover {
+    transform: scale(1.08);
+    -webkit-transform: scale(1.08);
+    -moz-transform: scale(1.08);
+    -ms-transform: scale(1.08);
+    -o-transform: scale(1.08);
+    color: white;
+}
+
+.row-images:hover .overlay {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.play {
+    transition: transform 450ms;
+    -webkit-transition: transform 450ms;
+    -moz-transition: transform 450ms;
+    -ms-transition: transform 450ms;
+    -o-transition: transform 450ms;
+}
+
+.play:hover {
+    transform: scale(1.18);
+    -webkit-transform: scale(1.18);
+    -moz-transform: scale(1.18);
+    -ms-transform: scale(1.18);
+    -o-transform: scale(1.18);
+    color: white;
+}
+
+.red {
+    color: red;
+    transition: transform 450ms;
+    -webkit-transition: transform 450ms;
+    -moz-transition: transform 450ms;
+    -ms-transition: transform 450ms;
+    -o-transition: transform 450ms;
+}
+
+.red:hover {
+    transform: scale(1.18);
+    -webkit-transform: scale(1.18);
+    -moz-transform: scale(1.18);
+    -ms-transform: scale(1.18);
+    -o-transform: scale(1.18);
+    color: white;
+}
+
+.white {
+    transition: transform 450ms;
+    -webkit-transition: transform 450ms;
+    -moz-transition: transform 450ms;
+    -ms-transition: transform 450ms;
+    -o-transition: transform 450ms;
+}
+
+.white:hover {
+    transform: scale(1.18);
+    -webkit-transform: scale(1.18);
+    -moz-transform: scale(1.18);
+    -ms-transform: scale(1.18);
+    -o-transform: scale(1.18);
+    color: red;
+}
+
+.overlay>a {
+    color: white;
+}
+
+.link:hover {
+    color: gold;
+    text-decoration: none;
+}
+
+.row::-webkit-scrollbar {
+    display: none;
+}
+
+.movie-list {
+    margin: 10px auto;
+}
+
+@media screen and (max-width:900px) {
+    .overlay {
+        font-size: 0.8rem;
+    }
+}

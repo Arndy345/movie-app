@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.App {
+    background-color: black;
+    color: white;
+    height: 100%;
+}
+
+.App>h2 {
+    text-align: center;
+}
+
+.movie {
+    display: block;
+}
+
+.youtube__video {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
