@@ -13,7 +13,7 @@ function Row({ movies, setFavor, handleClick, trailerUrl}) {
   return (
     <div className="container-fluid movie-app">
     <div className="row" >
-    {movies.map((movie, index) => (
+    {movies?.map((movie, index) => (
       <div className="row-images justify-content-start d-flex ">
           <img
             src={movie.Poster}
@@ -25,7 +25,7 @@ function Row({ movies, setFavor, handleClick, trailerUrl}) {
           <div className="overlay"></div>
         
         <div className="overlay align-items-center " >
-          <PlayCircleFilledIcon className="body__shuffle" onClick={() => handleClick(movie)} fontSize="medium" className="play"/>
+          <PlayCircleFilledIcon className="body__shuffle play" onClick={() => handleClick(movie)} fontSize="medium"/>
           <FavoriteIcon fontSize="medium" onClick={()=>setFavor(movie)} className="white"/>
         </div>
         </div>
